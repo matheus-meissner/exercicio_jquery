@@ -3,8 +3,6 @@ $('form').on('submit', function(e){
 })
 
 $('form button').click(function() {
-    console.log("olá mundo")
-
     const nomeTarefa = $('#nome_tarefa').val();
     const novoItem = $('<li style="display: none"></li>');
 
