@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    /* height: 50vh; */
     background-image: url(./images/fundo-3d-com-cubos-brancos.jpg);
     background-size: cover;
     font-family: "Imbue", serif;
@@ -16,7 +16,8 @@ body {
 }
 
 .container {
-    position: fixed;
+    margin-top: 250px;
+    /* position: fixed; */
     border-width: 2px;
     border-radius: 7px;
     border-style: solid;
@@ -24,6 +25,8 @@ body {
     padding: 11px 27px;
     backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque ao fundo */
     background-color: transparent; /* Define uma cor de fundo semitransparente */
+    max-height: 730px;
+    overflow-y: auto;
 }
 
 header h1 {
@@ -34,6 +37,8 @@ header h1 {
     font-size: 50px;
     font-style: italic;
     text-transform: uppercase;
+    position: sticky;
+    z-index: 1;
 }
 
 form {
